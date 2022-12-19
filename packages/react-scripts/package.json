@@ -1,6 +1,6 @@
 {
   "name": "@deondigital/react-scripts",
-  "version": "5.0.1",
+  "version": "5.0.2",
   "description": "Deon digital specific configuration and scripts for Create React App.",
   "repository": {
     "type": "git",
