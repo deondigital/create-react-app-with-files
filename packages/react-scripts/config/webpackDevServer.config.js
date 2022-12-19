@@ -97,6 +97,10 @@ module.exports = function (proxy, allowedHost) {
       // from the root.
       // remove last slash so user can land on `/test` instead of `/test/`
       publicPath: paths.publicUrlOrPath.slice(0, -1),
+      // We write the output of the dev server to disk, so that we can serve the development
+      // files directly from the server. This is closer to the production environment and
+      // therefore preferable.
+      writeToDisk: true,
     },
 
     https: getHttpsConfig(),
